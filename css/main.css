@@ -1,0 +1,600 @@
+a:hover {
+  text-decoration: none; }
+
+section {
+  padding: 70px 0; }
+
+h2.section-title {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #28a7e9;
+  font-size: 50px;
+  line-height: 1.3;
+  letter-spacing: 0px; }
+
+h3.section-title-secondary {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 1.7;
+  letter-spacing: 0px; }
+
+p.section-info {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #9e9fa1;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0px; }
+
+h5.section-info-secondary {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 1.8;
+  letter-spacing: 0px; }
+
+button.blue-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #28a7e9;
+  padding: 14px 16px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 2px solid #28a7e9;
+  max-width: 200px;
+  cursor: pointer; }
+  button.blue-button:hover {
+    color: #28a7e9;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    border-color: #FFFFFF; }
+
+button.transparent-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 14px 16px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 2px solid #FFFFFF;
+  max-width: 200px;
+  cursor: pointer; }
+  button.transparent-button:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    text-decoration: none;
+    border-color: #000000; }
+
+html {
+  height: 100%; }
+
+body {
+  position: relative;
+  min-height: 100%;
+  opacity: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear; }
+  body.animated {
+    opacity: 1; }
+
+main {
+  position: relative; }
+
+nav {
+  z-index: 1001; }
+  nav.navbar {
+    height: 60px;
+    left: 0;
+    right: 0;
+    background-color: #1f3e52;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    padding-left: 0;
+    padding-right: 0; }
+    nav.navbar .navbar-toggler .toggle {
+      width: 30px;
+      height: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      z-index: 10; }
+      nav.navbar .navbar-toggler .toggle .bar {
+        position: relative;
+        width: 22px;
+        height: 2px;
+        background: #28a7e9; }
+        nav.navbar .navbar-toggler .toggle .bar:before, nav.navbar .navbar-toggler .toggle .bar:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: inherit;
+          left: 0;
+          -webkit-transform-origin: center center;
+                  transform-origin: center center;
+          -webkit-transition: top .25s ease, bottom .25s ease, -webkit-transform .25s ease;
+          transition: top .25s ease, bottom .25s ease, -webkit-transform .25s ease;
+          transition: transform .25s ease, top .25s ease, bottom .25s ease;
+          transition: transform .25s ease, top .25s ease, bottom .25s ease, -webkit-transform .25s ease; }
+        nav.navbar .navbar-toggler .toggle .bar:before {
+          top: -8px; }
+        nav.navbar .navbar-toggler .toggle .bar:after {
+          bottom: -8px; }
+      nav.navbar .navbar-toggler .toggle.clicked .bar {
+        background: transparent; }
+        nav.navbar .navbar-toggler .toggle.clicked .bar:before, nav.navbar .navbar-toggler .toggle.clicked .bar:after {
+          background: #000; }
+        nav.navbar .navbar-toggler .toggle.clicked .bar:before {
+          -webkit-transform: rotate(45deg);
+                  transform: rotate(45deg);
+          top: 0;
+          background: #28a7e9; }
+        nav.navbar .navbar-toggler .toggle.clicked .bar:after {
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+          bottom: 0;
+          background: #28a7e9; }
+    nav.navbar.sticky {
+      position: fixed;
+      height: 50px;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #1f3e52;
+      -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+              box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      z-index: 1001; }
+      nav.navbar.sticky a.navbar-brand {
+        height: 30px; }
+      nav.navbar.sticky .navbar-collapse ul li a.nav-link {
+        font-size: 13px; }
+    nav.navbar a.navbar-brand {
+      margin: 0;
+      padding: 0;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+      cursor: pointer;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      nav.navbar a.navbar-brand img {
+        height: 30px; }
+    nav.navbar .navbar-collapse {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      nav.navbar .navbar-collapse ul li + li {
+        margin-left: 10px; }
+      nav.navbar .navbar-collapse ul li.active a.nav-link {
+        color: #FFFFFF; }
+      nav.navbar .navbar-collapse ul li a.nav-link {
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+        color: #FFFFFF;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
+        nav.navbar .navbar-collapse ul li a.nav-link.active {
+          color: #C0B283; }
+        nav.navbar .navbar-collapse ul li a.nav-link:hover {
+          color: #28a7e9; }
+      nav.navbar .navbar-collapse.collapsing, nav.navbar .navbar-collapse.show {
+        background-color: white; }
+        nav.navbar .navbar-collapse.collapsing ul li, nav.navbar .navbar-collapse.show ul li {
+          padding: 7px 0;
+          margin: 0;
+          text-align: center; }
+          nav.navbar .navbar-collapse.collapsing ul li a.nav-link, nav.navbar .navbar-collapse.show ul li a.nav-link {
+            color: #000;
+            text-transform: uppercase;
+            font-size: 14px; }
+            nav.navbar .navbar-collapse.collapsing ul li a.nav-link.page-link, nav.navbar .navbar-collapse.show ul li a.nav-link.page-link {
+              max-width: 120px;
+              margin: 0 auto; }
+
+.box {
+  width: 300px;
+  height: 200px;
+  background: #dedede;
+  -webkit-transition-property: -webkit-box-shadow,-webkit-transform;
+  transition-property: -webkit-box-shadow,-webkit-transform;
+  transition-property: box-shadow,transform;
+  transition-property: box-shadow,transform,-webkit-box-shadow,-webkit-transform;
+  -webkit-transition-duration: 600ms;
+          transition-duration: 600ms;
+  -webkit-transition-timing-function: cubic-bezier(0.16, 1, 0.29, 0.99);
+          transition-timing-function: cubic-bezier(0.16, 1, 0.29, 0.99);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); }
+  .box:hover {
+    -webkit-box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.2); }
+
+.home-page-nav nav {
+  background-color: transparent;
+  position: absolute;
+  height: 150px; }
+
+.home-page-nav nav.navbar a.navbar-brand img {
+  height: 40px; }
+
+.home-page-nav nav.navbar .navbar-collapse ul li a.nav-link {
+  font-size: 15px; }
+
+.home-page-nav nav.navbar.sticky {
+  height: 70px;
+  background-color: #000000; }
+
+.about-page-nav nav {
+  background-color: #1b232e;
+  height: 150px; }
+
+.about-page-nav nav.navbar a.navbar-brand img {
+  height: 40px; }
+
+.about-page-nav nav.navbar .navbar-collapse ul li a.nav-link {
+  font-size: 15px; }
+
+.about-page-nav nav.navbar.sticky {
+  height: 70px;
+  background-color: #000000; }
+
+section.hero {
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0; }
+  section.hero h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 61px;
+    line-height: 1.6;
+    letter-spacing: 0px; }
+  section.hero h3.section-title-secondary {
+    color: #28a7e9;
+    margin-bottom: 30px; }
+  section.hero button {
+    max-width: 200px; }
+
+section.our-programs {
+  background-color: #192028; }
+  section.our-programs .card {
+    background-color: transparent; }
+  section.our-programs .card-header {
+    background-color: transparent; }
+    section.our-programs .card-header button {
+      color: #28a7e9;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      border-bottom: 1px solid #28a7e9;
+      border-radius: 0; }
+      section.our-programs .card-header button:hover {
+        color: #FFFFFF;
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
+        border-bottom: 1px solid #FFFFFF; }
+  section.our-programs .card-body {
+    max-height: 350px;
+    max-width: 75%; }
+    section.our-programs .card-body .img {
+      max-height: 100%; }
+      section.our-programs .card-body .img img {
+        max-height: 100%;
+        width: 270px; }
+    section.our-programs .card-body .text {
+      background-color: #28a7e9;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 0 20px; }
+      section.our-programs .card-body .text p.section-info {
+        color: #FFFFFF; }
+
+section.about-gympower {
+  height: 700px;
+  background-image: url(../img/about-gympower-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  section.about-gympower p.section-info {
+    max-width: 50%; }
+
+section.workout-with-our-coaches {
+  background-color: #192028; }
+  section.workout-with-our-coaches .workout-with-our-coaches-wrap {
+    background-color: #273140; }
+    section.workout-with-our-coaches .workout-with-our-coaches-wrap .img {
+      height: 100%; }
+    section.workout-with-our-coaches .workout-with-our-coaches-wrap .text {
+      padding: 25px; }
+      section.workout-with-our-coaches .workout-with-our-coaches-wrap .text h3.section-title-secondary {
+        font-size: 27px; }
+
+section.gallery-line {
+  padding: 0; }
+  section.gallery-line img {
+    width: 100%; }
+
+section.personal-opinion {
+  background-color: #192028;
+  text-align: center; }
+  section.personal-opinion h2.section-title {
+    margin-bottom: 40px; }
+  section.personal-opinion h5.section-info-secondary {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    margin-bottom: 30px; }
+  section.personal-opinion img {
+    border-radius: 50%; }
+  section.personal-opinion h6 {
+    color: #28a7e9;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 15px 0; }
+
+footer {
+  background-color: #273140;
+  padding: 80px 0 40px 0; }
+  footer h5.section-info-secondary {
+    font-size: 22px; }
+    footer h5.section-info-secondary a {
+      color: inherit; }
+      footer h5.section-info-secondary a:hover {
+        color: #28a7e9;
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease; }
+  footer .copyright {
+    margin-top: 20px;
+    padding-top: 50px;
+    border-top: 1px solid #fafafa; }
+    footer .copyright ul li + li {
+      margin-left: 15px; }
+    footer .copyright ul li a:hover i {
+      color: #28a7e9;
+      -webkit-transition: 0.4s ease;
+      transition: 0.4s ease; }
+    footer .copyright ul li a i {
+      font-size: 20px;
+      color: #4e555b; }
+
+section.page-hero {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px; }
+
+section.about-page-hero {
+  background-image: url(../img/about-page-hero-bg.jpg); }
+
+section.about-us {
+  background-color: #192028;
+  padding-bottom: 0; }
+  section.about-us ul {
+    margin-top: 40px;
+    max-width: 50%; }
+    section.about-us ul li + li {
+      margin-top: 15px; }
+    section.about-us ul li .icon {
+      margin-right: 30px;
+      height: 15px;
+      width: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: #28a7e9;
+      border-radius: 50%; }
+      section.about-us ul li .icon i {
+        color: #000000;
+        font-size: 10px; }
+    section.about-us ul li .text p.section-info {
+      margin-bottom: 0; }
+
+section.my-experience {
+  padding: 100px 0;
+  background-image: url(../img/my-experience-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  section.my-experience h2.section-title {
+    margin-bottom: 50px; }
+  section.my-experience h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #28a7e9;
+    font-size: 96px;
+    line-height: 1.2;
+    letter-spacing: 0px; }
+  section.my-experience h6 {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.3;
+    letter-spacing: 0px; }
+
+section.motivation-gallery {
+  background-color: #192028;
+  padding-bottom: 0; }
+  section.motivation-gallery h2.section-title {
+    margin-bottom: 50px; }
+  section.motivation-gallery img {
+    width: 100%; }
+
+section.about-page-personal-opinion {
+  background-color: #273140; }
+  section.about-page-personal-opinion .client-info {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.about-page-personal-opinion .client-info img {
+      margin-right: 25px;
+      border-radius: 50%; }
+    section.about-page-personal-opinion .client-info h5.section-info-secondary {
+      color: #28a7e9; }
+    section.about-page-personal-opinion .client-info h6 {
+      color: #FFFFFF; }
+
+section.programs-page-hero {
+  background-image: url(../img/program-page-hero-bg.jpg); }
+
+section.programs-page-body {
+  background-color: #192028; }
+  section.programs-page-body h2.section-title {
+    margin-bottom: 40px; }
+  section.programs-page-body img {
+    width: 100%; }
+  section.programs-page-body .programs-page-body-wrap {
+    background-color: #28a7e9;
+    padding: 20px; }
+    section.programs-page-body .programs-page-body-wrap h5.section-info-secondary {
+      color: #FFFFFF; }
+    section.programs-page-body .programs-page-body-wrap p.section-info {
+      color: #FFFFFF; }
+
+section.coaches-page-hero {
+  background-image: url(../img/coaches-page-hero-bg.jpg); }
+
+section.contact-page-hero {
+  background-image: url(../img/contact-page-hero-bg.jpg); }
+
+section.contact-information {
+  background-color: #192028; }
+  section.contact-information .address-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.contact-information .address-wrap + .address-wrap {
+      margin-top: 30px; }
+    section.contact-information .address-wrap .icon {
+      margin-right: 30px; }
+      section.contact-information .address-wrap .icon i {
+        color: #28a7e9;
+        font-size: 60px; }
+    section.contact-information .address-wrap .text h5.section-info-secondary {
+      font-size: 20px;
+      margin-bottom: 0; }
+      section.contact-information .address-wrap .text h5.section-info-secondary a {
+        color: inherit; }
+        section.contact-information .address-wrap .text h5.section-info-secondary a:hover {
+          color: #28a7e9;
+          -webkit-transition: 0.4s ease;
+          transition: 0.4s ease; }
+  section.contact-information form {
+    margin-top: 50px;
+    background-color: #28a7e9;
+    padding: 40px; }
+    section.contact-information form h3.section-title-secondary {
+      line-height: 1.2;
+      font-size: 25px;
+      margin-bottom: 30px; }
+    section.contact-information form input {
+      height: 50px; }
+    section.contact-information form textarea {
+      height: 100px;
+      margin-bottom: 20px; }
+
+@media (max-width: 575px) {
+  section.hero h1 {
+    line-height: 1.2;
+    font-size: 55px;
+    margin-top: 100px; }
+  section.hero h3.section-title-secondary {
+    line-height: 1.2;
+    margin-top: 20px; }
+  section.our-programs .card-body {
+    max-width: 100%;
+    max-height: unset;
+    padding: 0;
+    text-align: center; }
+  section.our-programs .card-body .img img {
+    width: 100%; }
+  section.our-programs .card-body .text button.transparent-button {
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  section.about-gympower {
+    height: unset; }
+  section.about-gympower p.section-info {
+    max-width: 100%; }
+  section.workout-with-our-coaches .workout-with-our-coaches-wrap .img img {
+    width: 100%; }
+  footer .copyright p.section-info {
+    text-align: center;
+    margin-bottom: 20px; }
+  section.about-us img {
+    width: 100%; }
+  section.about-us ul li .icon {
+    min-width: 15px; }
+  section.page-hero {
+    background-position: 55% 100%; }
+  section.contact-information form {
+    padding: 40px 10px; } }
+
+@media (max-width: 991px) {
+  nav.sticky a.navbar-brand {
+    width: 180px; } }
